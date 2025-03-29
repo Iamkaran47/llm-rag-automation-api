@@ -12,3 +12,4 @@ build/
 data/*.db
 __pycache__
 .conda
+.env
