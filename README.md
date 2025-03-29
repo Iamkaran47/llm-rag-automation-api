@@ -1,11 +1,11 @@
 # LLM + RAG-Based Function Execution API
 
 ## Overview
-This project implements a Python-based API service that leverages Large Language Models (LLM) and Retrieval-Augmented Generation (RAG) to dynamically retrieve and execute automation functions based on user prompts. It integrates FAISS for vector search and Google Gemini Pro for query processing.
+This project implements a Python-based API service that leverages Large Language Models (LLM) and Retrieval-Augmented Generation (RAG) to dynamically retrieve and execute automation functions based on user prompts. It integrates FAISS for vector search and Google Gemini Model for query processing.
 
 ## Features
 - **LLM + RAG for Function Retrieval**: Uses an embedding model and FAISS to retrieve relevant functions based on natural language queries.
-- **Function Execution**: Generates executable Python scripts dynamically using the Gemini Pro API.
+- **Function Execution**: Generates executable Python scripts dynamically using the Gemini Model API.
 - **Session Context Management**: Maintains session history in Redis Cloud to enhance function retrieval.
 - **Automation Functions**: Supports a range of system automation tasks, including launching applications, retrieving system metrics, managing processes, and executing shell commands.
 - **Secure Execution**: Implements safe command execution using `shlex` and subprocess handling.

@@ -3,7 +3,7 @@ from src.config.settings import GEMINI_API_KEY
 from typing import Dict, Optional
 
 class CodeGenerator:
-    """Generates Python code for function invocation using Gemini Pro."""
+    """Generates Python code for function invocation using Gemini Model"""
 
     def __init__(self):
         """Initialize the Gemini Model."""
@@ -41,7 +41,7 @@ class CodeGenerator:
         try:
             response = self.model.generate_content(prompt)
             if not response or not hasattr(response, "text") or not response.text:
-                raise ValueError("Gemini Pro returned an empty response.")
+                raise ValueError("Gemini Model returned an empty response.")
 
             # Ensure no markdown formatting like ```python
             code = response.text.strip().replace("```python", "").replace("```", "").strip()

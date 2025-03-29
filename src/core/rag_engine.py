@@ -76,7 +76,7 @@ class RAGEngine:
             return query  # Fallback in case of API failure
 
     def retrieve_function(self, query: str) -> Optional[Dict]:
-        """Retrieve the best-matching function using Gemini Pro + FAISS."""
+        """Retrieve the best-matching function using Gemini Model + FAISS."""
         mapped_function = self._preprocess_query_with_llm(query)
 
         
