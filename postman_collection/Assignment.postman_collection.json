@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "673c7710-9767-46ec-a7b0-6d00859f8239",
+		"name": "Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32051474"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/execute",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"prompt\": \"I want to see memory usage\",\r\n    \"params\": {}\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/execute",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"execute"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"prompt\": \"I want to see memory usage\",\r\n    \"params\": {}\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/execute",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"execute"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sat, 29 Mar 2025 09:21:06 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "800"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"function\": \"get_ram_usage\",\n    \"code\": \"import logging\\nimport sys\\n\\nfrom src.core.system_monitor import SystemMonitor\\n\\n# Configure logging\\nlogging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')\\n\\ndef main():\\n    \\\"\\\"\\\"\\n    Main function to invoke the get_ram_usage function and log the result.\\n    \\\"\\\"\\\"\\n    try:\\n        # Instantiate the SystemMonitor class\\n        system_monitor = SystemMonitor()\\n\\n        # Call the get_ram_usage function\\n        ram_usage = system_monitor.get_ram_usage()\\n\\n        # Log the RAM usage\\n        logging.info(f\\\"RAM Usage: {ram_usage}\\\")\\n\\n    except Exception as e:\\n        logging.error(f\\\"An error occurred: {e}\\\")\\n        sys.exit(1)  # Exit with an error code\\n\\nif __name__ == \\\"__main__\\\":\\n    main()\"\n}"
+				}
+			]
+		}
+	]
+}

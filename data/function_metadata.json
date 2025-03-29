@@ -1,0 +1,202 @@
+[
+    {
+        "name": "open_chrome",
+        "description": "Opens Google Chrome to a default webpage.",
+        "module": "automation_functions",
+        "class": "AutomationFunctions",
+        "params": [],
+        "category": "Application Control",
+        "platform": [
+            "Windows",
+            "Linux"
+        ]
+    },
+    {
+        "name": "open_calculator",
+        "description": "Opens the system calculator application.",
+        "module": "automation_functions",
+        "class": "AutomationFunctions",
+        "params": [],
+        "category": "Application Control",
+        "platform": [
+            "Windows",
+            "Linux"
+        ]
+    },
+    {
+        "name": "get_cpu_usage",
+        "description": "Returns the current CPU usage as a percentage.",
+        "module": "system_monitor",
+        "class": "SystemMonitor",
+        "params": [],
+        "category": "System Monitoring",
+        "platform": [
+            "Windows",
+            "Linux"
+        ]
+    },
+    {
+        "name": "get_ram_usage",
+        "description": "Returns the current RAM usage as a percentage.",
+        "module": "system_monitor",
+        "class": "SystemMonitor",
+        "params": [],
+        "category": "System Monitoring",
+        "platform": [
+            "Windows",
+            "Linux"
+        ]
+    },
+    {
+        "name": "run_shell_command",
+        "description": "Executes a shell command and returns its output.",
+        "module": "command_executor",
+        "class": "CommandExecutor",
+        "params": [
+            "command"
+        ],
+        "category": "Command Execution",
+        "platform": [
+            "Windows",
+            "Linux"
+        ]
+    },
+    {
+        "name": "create_text_file",
+        "description": "Creates a new text file with given content.",
+        "module": "file_operations",
+        "class": "FileOperations",
+        "params": [
+            "file_name",
+            "content"
+        ],
+        "category": "File Management",
+        "platform": [
+            "Windows",
+            "Linux"
+        ]
+    },
+    {
+        "name": "delete_file",
+        "description": "Deletes a specified file.",
+        "module": "file_operations",
+        "class": "FileOperations",
+        "params": [
+            "file_name"
+        ],
+        "category": "File Management",
+        "platform": [
+            "Windows",
+            "Linux"
+        ]
+    },
+    {
+        "name": "list_files_in_directory",
+        "description": "Lists all files in a specified directory.",
+        "module": "file_operations",
+        "class": "FileOperations",
+        "params": [
+            "directory"
+        ],
+        "category": "File Management",
+        "platform": [
+            "Windows",
+            "Linux"
+        ]
+    },
+    {
+        "name": "kill_process",
+        "description": "Terminates a running process by name or PID.",
+        "module": "process_manager",
+        "class": "ProcessManager",
+        "params": [
+            "process_name_or_pid"
+        ],
+        "category": "Process Management",
+        "platform": [
+            "Windows",
+            "Linux"
+        ]
+    },
+    {
+        "name": "list_running_processes",
+        "description": "Lists currently running processes.",
+        "module": "process_manager",
+        "class": "ProcessManager",
+        "params": [],
+        "category": "Process Management",
+        "platform": [
+            "Windows",
+            "Linux"
+        ]
+    },
+    {
+        "name": "get_ip_address",
+        "description": "Retrieves the system's IP address.",
+        "module": "network_utils",
+        "class": "NetworkUtils",
+        "params": [],
+        "category": "Network Utilities",
+        "platform": [
+            "Windows",
+            "Linux"
+        ]
+    },
+    {
+        "name": "ping_host",
+        "description": "Pings a host and returns response time.",
+        "module": "network_utils",
+        "class": "NetworkUtils",
+        "params": [
+            "host"
+        ],
+        "category": "Network Utilities",
+        "platform": [
+            "Windows",
+            "Linux"
+        ]
+    },
+    {
+        "name": "restart_system",
+        "description": "Restarts the computer.",
+        "module": "system_actions",
+        "class": "SystemActions",
+        "params": [],
+        "category": "System Actions",
+        "platform": [
+            "Windows",
+            "Linux"
+        ]
+    },
+    {
+        "name": "shutdown_system",
+        "description": "Shuts down the computer.",
+        "module": "system_actions",
+        "class": "SystemActions",
+        "params": [],
+        "category": "System Actions",
+        "platform": [
+            "Windows",
+            "Linux"
+        ]
+    },
+    {
+        "name": "get_ram_usage",
+        "description": "Returns the current RAM usage as a percentage.",
+        "module": "automation_functions",  
+        "class": "AutomationFunctions",
+        "params": [],
+        "category": "System Monitoring",
+        "platform": ["Windows", "Linux"]
+    },
+    {
+        "name": "get_cpu_usage",
+        "description": "Returns the current CPU usage as a percentage.",
+        "module": "automation_functions",
+        "class": "AutomationFunctions",
+        "params": [],
+        "category": "System Monitoring",
+        "platform": ["Windows", "Linux"]
+    }
+    
+]
